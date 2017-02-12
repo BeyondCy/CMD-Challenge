@@ -4,6 +4,8 @@ This repository contians *my* solutions to the [Commandline Challenge](https://c
 
 It's a great project and I encourage everyone to solve the tasks without looking at the solutions! If you do look, I hope you learn something. 
 
+![Interface](images/cmd.png)
+
 #### hello_world:
 ```bash
 $ echo "hello world"
