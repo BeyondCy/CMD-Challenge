@@ -151,6 +151,11 @@ $ find . -type f -iname "[0-9]*" -exec basename {} \;
 $ head -25 faces.txt | tail -1
 ```
 
+#### reverse_readme:
+```bash
+$ cat README | tac
+```
+
 #### remove_duplicate_lines:
 ```bash
 $ awk '!x[$0]++' faces.txt
