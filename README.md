@@ -58,7 +58,7 @@ $ grep -l 500 *
 
 #### search_for_files_by_extension:
 ```bash
-$ find . -type f -iname "access.log*"
+$ find . -iname "access.log*"
 ```
 
 #### search_for_string_in_files_recursive:
