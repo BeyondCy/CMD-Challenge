@@ -68,7 +68,7 @@ $ find . -type f -iname "access.log*" -exec grep 500 {} \;
 
 #### extract_ip_addresses:
 ```bash
-$ find . -type f -iname "access.log*" -exec grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' {} \; 
+$ find . -iname "access.log*" -exec grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' {} \; 
 ```
 
 #### delete_files:
