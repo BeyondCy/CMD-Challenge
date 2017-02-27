@@ -63,7 +63,7 @@ $ find . -iname "access.log*"
 
 #### search_for_string_in_files_recursive:
 ```bash
-$ find . -type f -iname "access.log*" -exec grep 500 {} \;
+$ find . -iname "access.log*" -exec grep 500 {} \;
 ```
 
 #### extract_ip_addresses:
