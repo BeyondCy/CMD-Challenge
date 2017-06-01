@@ -106,6 +106,16 @@ $ echo $(seq 1 100)
 $ find . -type f -iname "-*" -exec rm {} \;
 ```
 
+#### print_sorted_by_key:
+```bash
+$ cat ps-ef* | sort -u -k2 -n
+```
+
+#### IPv4_listening_ports:
+```bash
+$ cat netstat.out | grep tcp | grep -v tcp6   | cut -d ':' -f 2 | cut -f 1 -d ' ' | sort -unr
+````
+
 #### remove_files_with_extension:
 ```bash
 $ find . -type f -iname "*.doc" -exec rm {} \;
