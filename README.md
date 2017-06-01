@@ -171,6 +171,11 @@ $ cat war_and_peace.txt | sed 's/! !/ /g' | sed 's/sa!ve/save/g' | sed 's/ous!/o
 $ for ip in $(grep -Eo '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' access.log.1); do grep $ip access.log.2| cut -d ' ' -f1; done   
 ```
 
+#### print_line_before:
+```bash
+$ find . -iname "access.log*" | xargs grep -h -B 1 --no-group-separator 404  | grep -v 404
+```
+
 #### print_files_if_different:
 ```bash
 $ for f in $(find . -iname "*.bin"); do if ! diff base.bin $f >/dev/null; then basename $f; fi; done
